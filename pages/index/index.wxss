@@ -1,0 +1,266 @@
+/**index.wxss**/
+/*模态样式区域  */
+
+.loadingModal{
+  height: 100vh;
+  width: 100vw;
+  background-color: #ccc;
+  position: fixed;
+  z-index: 999;
+}
+.header {
+ background-image: url("http://ot7z7wqqo.bkt.clouddn.com/weather-bg.png");
+ background-position: cover;
+ width:100%;
+ height: 50vh;
+background-size: cover
+}
+
+.header .time{
+display: inline-block;
+position: absolute;
+font-size: 25rpx;
+color: #fff;
+right: 30rpx;
+top:30rpx;
+}
+
+.header .mainInfo{
+    display: inline-flex;
+  flex-direction: column;
+  padding: 24rpx 24rpx 24rpx 48rpx
+}
+
+.header .mainInfo .city{
+  color: #fff;
+  font-size: 40rpx;
+  margin-top: 50rpx;
+}
+
+.header .mainInfo .tmp{
+  color: #fff;
+  font-size: 120rpx;
+}
+
+.header .mainInfo .txt{
+  color: #fff;
+  font-size: 40rpx;
+}
+
+/* //头部下方样式 */
+
+ .header .otherInfo{
+  display: flex;
+  flex-flow: nowrap row;
+   justify-content: center; 
+  align-items: flex-end;
+  height: calc(50% - 48rpx);
+  width: 100%;
+}
+
+.header .otherInfo text{
+  width: 33.33333%;
+  text-align: center;
+  margin-bottom: 10rpx;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 40rpx
+} 
+
+.header .otherInfo .line-1{
+  position: absolute;
+  left: 33.33333%;
+  width: 5rpx;
+  font-size: 50rpx;
+ line-height: 110rpx
+}
+
+.header .otherInfo .line-2{
+  position: absolute;
+  right: 33.33333%;
+  width: 5rpx;
+  font-size: 50rpx;
+   line-height: 110rpx
+}
+
+/*信息主题样式  */
+.body {
+  background-color: #F8F8F8;
+  width:100%;
+  padding: 0
+}
+
+.body .foreCast view{
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.body .foreCast .backday{
+  border-bottom: none;
+
+}
+
+.body .foreCast  text{
+  display: inline-block;
+  font-size: 30rpx;
+  color: #666666;
+  text-align: center;
+  width: 33.333333333333333333333%;
+  height: 99rpx;
+  line-height: 100rpx;
+
+  /*背景图片  */
+   background-position: 5rpx 12rpx; 
+   background-size: 80rpx 80rpx;
+   background-repeat: no-repeat;
+}
+
+/*一小时预测样式  */
+
+
+.body .hourlyForeCast{
+  width: 100%;
+  height: 140rpx;
+  border-top: 20rpx solid #ccc;
+  border-bottom: 20rpx solid #ccc;
+  /* border-radius: 9rpx  */
+}
+
+
+.body .hourlyForeCast .onehour{
+  width: 80%;
+  height: 100rpx;
+  margin: 0 auto;
+}
+
+.body .hourlyForeCast text{
+  display: inline-block;
+  width: 33.333333%;
+  line-height: 140rpx;
+  text-align: center;
+  color: #666666;
+  font-size: 40rpx
+}
+
+/*出行建议模块样式  */
+
+
+ .tips{
+   width: 100%;
+} 
+
+ .tips .trip,.sport,.car,.remind{
+   width: 100%;
+  border-bottom: 20rpx solid #ccc;
+} 
+
+
+.tips  view > .tipText{
+  display: inline-block;
+  line-height: 80rpx;
+  font-size: 25rpx;
+  text-align: left;
+  color: #666666;
+  padding-left: 40rpx;
+}
+
+.tips .trip .drsg{
+  height: 160rpx;
+  background-image: url("http://ot7z7wqqo.bkt.clouddn.com/yifu.png");
+  background-repeat: no-repeat;
+  background-size: 100rpx 100rpx;
+  background-position: 30rpx;
+}
+
+.tips .trip .trav{
+  height: 160rpx;
+  background-image: url("http://ot7z7wqqo.bkt.clouddn.com/trav.png");
+  background-repeat: no-repeat;
+  background-size: 100rpx 100rpx;
+  background-position: 30rpx;
+}
+
+.tips .trip .uv{
+  height: 160rpx;
+  background-image: url("http://ot7z7wqqo.bkt.clouddn.com/sun.png");
+  background-repeat: no-repeat;
+  background-size: 100rpx 100rpx;
+  background-position: 30rpx;
+}
+
+
+
+ /*运动建议  */
+
+ .tips .sport .sportitem{
+    height: 160rpx;
+  background-image: url("http://ot7z7wqqo.bkt.clouddn.com/sport.png");
+  background-repeat: no-repeat;
+  background-size: 100rpx 100rpx;
+  background-position: 30rpx;
+ }
+
+/*洗车建议  */
+
+
+ .tips .car .cw{
+    height: 160rpx;
+  background-image: url("http://ot7z7wqqo.bkt.clouddn.com/car.png");
+  background-repeat: no-repeat;
+  background-size: 100rpx 100rpx;
+  background-position: 30rpx;
+ }
+
+ /*温馨提示  */
+
+  .tips .remind  .comf{
+    height: 160rpx;
+  background-image: url("http://ot7z7wqqo.bkt.clouddn.com/wind.png");
+  background-repeat: no-repeat;
+  background-size: 100rpx 100rpx;
+  background-position: 30rpx;
+ }
+
+   .tips .remind  .flu{
+    height: 160rpx;
+  background-image: url("http://ot7z7wqqo.bkt.clouddn.com/gammao.png");
+  background-repeat: no-repeat;
+  background-size: 100rpx 100rpx;
+  background-position: 30rpx;
+ }
+
+
+
+ /*通用样式 txt   */
+
+ .tips .trip > view{
+  border-top: 1px solid #ccc;
+}
+
+ .tips > view  .head,.tips .body{
+   display: inline-block;
+  font-size: 25rpx;
+  line-height: 30rpx;
+  background-color: #fff;
+  color: #666666;
+  margin-left: 150rpx;  
+  width: calc(100% - 160rpx);
+  background-color: none;
+}
+
+ .tips > view  .head{
+   margin-top: 30rpx;
+   font-size: 30rpx;
+   color: #444;
+ }
+
+  .tips > view  .body{
+   margin-top: 10rpx
+ }
+
+ .tips > view .item{
+   border-top: 1px solid #ccc
+ }
+
+

@@ -1,0 +1,99 @@
+<!--index.wxml-->
+<view class="container">
+<loading hidden="{{loadingHidden}}">
+	加载中...
+</loading>
+
+<view class="loadingModal" hidden="{{loadingHiddenModal}}">
+</view>
+
+  <view class="header">
+    <view class="mainInfo">
+      <text class="city">{{WeatherData.basic.city}}</text>
+      <text class="tmp">{{WeatherData.now.tmp}}°</text>
+      <text class="txt">{{WeatherData.now.cond.txt}}</text>
+    </view>
+     <text class="time">{{WeatherData.time}}</text> 
+    <view class="otherInfo">
+      <text class="dir">{{WeatherData.now.wind.dir}}\n{{WeatherData.now.wind.sc}}</text>
+      <text class="hum">相对湿度\n{{WeatherData.now.hum}}%</text>
+      <text class="pcpn">降水量\n{{WeatherData.now.pcpn}}</text>
+      <text class="line-1">|</text>
+      <text class="line-2">|</text>
+    </view>
+  </view>
+
+  <view class="body" scroll-y>
+    <view class="foreCast">
+      <view class="today">
+        <text class="ForeTips">今天</text>
+        <text class="txt" style="background-image: url({{WeatherData.bg[0]}})">{{WeatherData.daily_forecast[0].cond.txt_d}}</text>
+        <text class="tmp">{{WeatherData.daily_forecast[0].tmp.min}}°\t/\t{{WeatherData.daily_forecast[0].tmp.max}}°</text>
+      </view>
+      <view class="tomorrow">
+        <text class="ForeTips">明天</text>
+        <text class="txt" style="background-image: url({{WeatherData.bg[1]}})">{{WeatherData.daily_forecast[1].cond.txt_d}}</text>
+        <text class="tmp">{{WeatherData.daily_forecast[1].tmp.min}}°\t/\t{{WeatherData.daily_forecast[1].tmp.max}}°</text>
+      </view>
+      <view class="backday">
+        <text class="ForeTips">后天</text>
+        <text class="txt" style="background-image: url({{WeatherData.bg[2]}})">{{WeatherData.daily_forecast[2].cond.txt_d}}</text>
+        <text class="tmp">{{WeatherData.daily_forecast[2].tmp.min}}°\t/\t{{WeatherData.daily_forecast[2].tmp.max}}°</text>
+      </view>
+    </view>
+    <view class="hourlyForeCast">
+      <view class="onehour">
+          <text class="time">{{WeatherData.hourly_forecast[0].date}}</text>
+        <text class="dir">{{WeatherData.hourly_forecast[0].cond.txt}}</text>
+        <text class="tmp">{{WeatherData.hourly_forecast[0].tmp}}°</text>  
+      </view>
+    </view>
+
+  </view>
+
+
+  <view class="tips">
+    <view class="trip">
+      <text class="tipText">出行建议</text>
+      <view class="drsg item">
+        <text class="head">{{WeatherData.suggestion.drsg.brf}}</text>
+        <text class="body">{{WeatherData.suggestion.drsg.txt}}</text>
+      </view>
+      <view class="trav item">
+        <text class="head">{{WeatherData.suggestion.trav.brf}}</text>
+        <text class="body">{{WeatherData.suggestion.trav.txt}}</text></view>
+      <view class="uv item">
+        <text class="head">{{WeatherData.suggestion.uv.brf}}</text>
+        <text class="body">{{WeatherData.suggestion.uv.txt}}</text></view>
+    </view>
+    <view class="sport">
+      <text class="tipText">运动建议</text>
+      <view class="sportitem item">
+        <text class="head">{{WeatherData.suggestion.sport.brf}}</text>
+        <text class="body">{{WeatherData.suggestion.sport.txt}}</text></view>
+    </view>
+    <view class="car">
+      <text class="tipText">驾车建议</text>
+      <view class="cw item">
+        <text class="head">{{WeatherData.suggestion.cw.brf}}</text>
+        <text class="body">{{WeatherData.suggestion.cw.txt}}</text></view>
+    </view>
+
+    <view class="remind">
+      <text class="tipText">温馨提醒</text>
+      <view class="comf item">
+        <text class="head">{{WeatherData.suggestion.comf.brf}}</text>
+        <text class="body">{{WeatherData.suggestion.comf.txt}}</text></view>
+      <view class="flu item"><text class="head">{{WeatherData.suggestion.flu.brf}}</text>
+        <text class="body">{{WeatherData.suggestion.flu.txt}}</text></view>
+    </view>
+
+
+
+
+
+
+
+  </view>
+</view>
+
