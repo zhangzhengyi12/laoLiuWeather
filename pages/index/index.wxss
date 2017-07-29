@@ -111,8 +111,8 @@ top:30rpx;
   line-height: 100rpx;
 
   /*背景图片  */
-   background-position: 5rpx 12rpx; 
-   background-size: 80rpx 80rpx;
+   background-position: 0rpx 12rpx; 
+   background-size: 60rpx 60rpx;
    background-repeat: no-repeat;
 }
 
@@ -170,7 +170,7 @@ top:30rpx;
   background-image: url("http://ot7z7wqqo.bkt.clouddn.com/yifu.png");
   background-repeat: no-repeat;
   background-size: 100rpx 100rpx;
-  background-position: 30rpx;
+  background-position: 20rpx;
 }
 
 .tips .trip .trav{
@@ -178,7 +178,7 @@ top:30rpx;
   background-image: url("http://ot7z7wqqo.bkt.clouddn.com/trav.png");
   background-repeat: no-repeat;
   background-size: 100rpx 100rpx;
-  background-position: 30rpx;
+  background-position: 20rpx;
 }
 
 .tips .trip .uv{
@@ -186,7 +186,7 @@ top:30rpx;
   background-image: url("http://ot7z7wqqo.bkt.clouddn.com/sun.png");
   background-repeat: no-repeat;
   background-size: 100rpx 100rpx;
-  background-position: 30rpx;
+  background-position: 20rpx;
 }
 
 
@@ -198,7 +198,7 @@ top:30rpx;
   background-image: url("http://ot7z7wqqo.bkt.clouddn.com/sport.png");
   background-repeat: no-repeat;
   background-size: 100rpx 100rpx;
-  background-position: 30rpx;
+  background-position: 20rpx;
  }
 
 /*洗车建议  */
@@ -209,7 +209,7 @@ top:30rpx;
   background-image: url("http://ot7z7wqqo.bkt.clouddn.com/car.png");
   background-repeat: no-repeat;
   background-size: 100rpx 100rpx;
-  background-position: 30rpx;
+  background-position: 20rpx;
  }
 
  /*温馨提示  */
@@ -219,7 +219,7 @@ top:30rpx;
   background-image: url("http://ot7z7wqqo.bkt.clouddn.com/wind.png");
   background-repeat: no-repeat;
   background-size: 100rpx 100rpx;
-  background-position: 30rpx;
+  background-position: 20rpx;
  }
 
    .tips .remind  .flu{
@@ -227,7 +227,7 @@ top:30rpx;
   background-image: url("http://ot7z7wqqo.bkt.clouddn.com/gammao.png");
   background-repeat: no-repeat;
   background-size: 100rpx 100rpx;
-  background-position: 30rpx;
+  background-position: 20rpx;
  }
 
 
@@ -244,7 +244,7 @@ top:30rpx;
   line-height: 30rpx;
   background-color: #fff;
   color: #666666;
-  margin-left: 150rpx;  
+  margin-left: 140rpx;  
   width: calc(100% - 160rpx);
   background-color: none;
 }

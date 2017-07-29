@@ -97,10 +97,12 @@ function getWeatherURLIconURL(code){
 
 
 function setHourlyWeather(hourly){
-  if(hourly.date){
+  if(hourly){
     let time = (hourly.date).split(" ")[1];
      hourly.date = time;
   }else{
+    hourly = {};
+    hourly.cond = {};
     hourly.date = "22.00";
     hourly.tmp = "30";
     hourly.cond.txt = "晴";
